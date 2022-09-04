@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorpurpleshade"
+    tools:context="com.tas.collagemaker.photoeditor.piccollage.photoframe.otherclasses.InAppPurchase">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/premium_text"
+        android:layout_alignParentTop="true"
+        android:id="@+id/toptext"
+        android:layout_marginTop="8dp"
+        />
+    <!--top-->
+    <RelativeLayout
+        android:id="@+id/iap1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/toptext"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iapimg2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/iapimg1"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/crownbig"
+            tools:ignore="UnknownId" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iapimg2"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:src="@drawable/crownbig"
+            android:text="Become a royal member"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:id="@+id/textfont"/>
+    </RelativeLayout>
+    <!--middle-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iap3"
+        android:layout_below="@+id/iap1"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/iap2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iap1"
+            android:layout_margin="10dp"
+            >
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                >
+                <RadioButton
+                    android:id="@+id/week_1"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:buttonTint="@color/colorredmedium"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="\t1 week: $3.99 \t\t\t"
+                    android:textColor="@color/White"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/month_2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:buttonTint="@color/colorredmedium"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="2 month: $8.99"
+                    android:textColor="@color/White"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/month_3"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:buttonTint="@color/colorredmedium"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="3 month: $15.99"
+                    android:textColor="@color/White"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/lifetime"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radio_bg"
+                    android:buttonTint="@color/colorredmedium"
+                    android:checked="true"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="Life Time: $19.99"
+                    android:textColor="@color/White"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <!--bottom-->
+    <RelativeLayout
+        android:id="@+id/iap3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp">
+
+
+        <ImageView
+            android:id="@+id/sub"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:src="@drawable/subscribe"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/continueads"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/sub"
+            android:src="@drawable/continuebtn"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>

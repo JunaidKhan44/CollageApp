@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorpurpleshade"
+    tools:context="com.tas.collagemaker.photoeditor.piccollage.photoframe.yourworks.YourWork">
+
+    <!--top-->
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorbrownshade"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:text="Ads is loading..."
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:id="@+id/loadtxt"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            />
+
+
+    </RelativeLayout>
+
+    <!--below this-->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add"
+        android:layout_below="@+id/top"
+        android:id="@+id/swipelayout">
+    <com.example.stevenyang.snowfalling.SnowFlakesLayout
+        android:id="@+id/snowflakelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorpurpleshade">
+
+        <!--recyclerview-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gridrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:visibility="visible"
+            tools:listitem="@layout/your_workitem" />
+        <!--text view-->
+        <TextView
+            android:id="@+id/nowork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/montserrat"
+            android:text="No work Yet"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+    </com.example.stevenyang.snowfalling.SnowFlakesLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <!--above this-->
+    <!--special button-->
+    <RelativeLayout
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bottom"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/animatelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_drawable">
+
+                <ImageView
+                    android:id="@+id/addimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:src="@drawable/btn_new_new" />
+
+
+                <ImageView
+                    android:id="@+id/addfreestyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:src="@drawable/btn_new_free" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--bottom-->
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorbrownshade">
+
+
+        <ImageView
+            android:id="@+id/txtwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/yourwork"
+            android:layout_centerInParent="true"
+
+            />
+
+        <View
+            android:layout_width="90dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txtwork"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-10dp"
+            android:background="@color/white" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

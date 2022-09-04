@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tas.collagemaker.photoeditor.piccollage.photoframe">
+    <!-- permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name="com.tas.collagemaker.photoeditor.piccollage.photoframe.cloudmessages.App"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:hardwareAccelerated="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CollageApp">
+        <activity android:name="com.tas.collagemaker.photoeditor.piccollage.photoframe.otherclasses.ExitActivity"></activity>
+        <activity android:name="com.tas.collagemaker.photoeditor.piccollage.photoframe.otherclasses.MainCanvas" />
+        <activity android:name="com.tas.collagemaker.photoeditor.piccollage.photoframe.yourworks.YourWork" />
+        <activity android:name="com.tas.collagemaker.photoeditor.piccollage.photoframe.otherclasses.InAppPurchase" />
+        <activity android:name="com.tas.collagemaker.photoeditor.piccollage.photoframe.otherclasses.PrivacyPolicy" />
+        <activity android:name="com.tas.collagemaker.photoeditor.piccollage.photoframe.otherclasses.FreeStyle" />
+        <activity android:name="com.tas.collagemaker.photoeditor.piccollage.photoframe.otherclasses.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+        <service android:name="com.tas.collagemaker.photoeditor.piccollage.photoframe.cloudmessages.FCMMessageReceiverService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <RelativeLayout
+        android:id="@+id/tablayoutinside"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorbrownshade">
+
+        <ImageView
+            android:id="@+id/done"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ok_btn"
+            android:layout_margin="20dp"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/close_btn"
+            android:layout_margin="20dp"
+
+
+
+            />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/colorbrownshade"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            app:tabTextColor="@android:color/white"
+
+
+            >
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabgradient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gradient"
+                app:textAllCaps="false" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image"
+                app:textAllCaps="false" />
+        </com.google.android.material.tabs.TabLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearlayout"
+        android:layout_below="@+id/tablayoutinside"
+        android:orientation="horizontal"
+        android:background="@color/colorbrownshade"
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/add_image_btn"
+            android:background="@color/colorbrownshade"
+            android:layout_weight="0.7"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:id="@+id/addmore"/>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tablayoutinside"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

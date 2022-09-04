@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dbackground">
+
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:hint="Type Here.."
+        android:textColorHint="@color/white"
+        android:theme="@style/EditTextTheme"
+        android:textColor="@color/white"
+
+
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext"
+        android:layout_margin="10dp"
+        android:dropDownWidth="200dp"
+        android:dropDownHeight="100dp"
+        android:textSize="?attr/actionBarSize"
+        android:visibility="gone"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    </Spinner>
+
+    <com.divyanshu.colorseekbar.ColorSeekBar
+        android:id="@+id/colorseekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_margin="10dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colorseekbar"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/font"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_baseline_editsmall_24"
+            android:text="Fonts"
+            android:textColor="@color/colorpurpleshade"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/colorbutton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_baseline_color_lens_24"
+            android:text="Colors"
+            android:textColor="@color/colorpurpleshade"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_baseline_done_outline_24"
+            android:text="Ok"
+            android:textColor="@color/colorpurpleshade"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_baseline_highlight_off_24"
+            android:text="Cancel"
+            android:textColor="@color/colorpurpleshade"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "372507344838",
+    "project_id": "collage-maker---pick-art-fb635",
+    "storage_bucket": "collage-maker---pick-art-fb635.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372507344838:android:cad11ef9c6b485d12e7cc7",
+        "android_client_info": {
+          "package_name": "com.tas.collagemaker.photoeditor.piccollage.photoframe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372507344838-4ba9nl9lnhbko3tvff645r5vt2l51fq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJCRuDBk3769ulIKRDJYBim8qXWqLTfYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372507344838-4ba9nl9lnhbko3tvff645r5vt2l51fq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

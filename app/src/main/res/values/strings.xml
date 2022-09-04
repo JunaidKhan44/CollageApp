@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">Collage Maker - Pick Art</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="privacy"><![CDATA[ Privacy &]]></string>
+    <string name="policy"> Policy</string>
+    <string name="agree_to_terms"><![CDATA[Agree to Terms &]]></string>
+    <string name="email">"info.thinktechappstudios@gmail.com"</string>
+    <!--test-->
+    <string name="FbInterstitialAd">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="FbBannerAd">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="FbNativeAd">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+
+    <!--original-->
+<!--        <string name="FbInterstitialAd">252793496496586_252793719829897</string>-->
+<!--        <string name="FbBannerAd">252793496496586_252794349829834</string>-->
+<!--        <string name="FbNativeAd">252793496496586_252794176496518</string>-->
+
+
+    <!--fonts-->
+    <string name="m_light">Montserrat Light</string>
+    <string name="etalasi">Etalasi</string>
+    <string name="oiRegular">Oi-Regular</string>
+    <string name="oswald">Oswald Heavy</string>
+    <string name="masked">Masked Hero</string>
+    <string name="rodano">Rodano Italic</string>
+
+    <array name="colorArray">
+
+        <item>@color/Aquamarine</item>
+        <item>@color/white</item>
+        <item>@color/black</item>
+        <item>@color/Aqua</item>
+        <item>@color/Beige</item>
+        <item>@color/Blue</item>
+        <item>@color/Chartreuse</item>
+        <item>@color/Chocolate</item>
+        <item>@color/Yellow</item>
+        <item>@color/deeppurple</item>
+        <item>@color/Olive</item>
+        <item>@color/red</item>
+        <item>@color/colorbrownshade</item>
+        <item>@color/colorpurpleshade</item>
+        <item>@color/colorreddark</item>
+        <item>@color/colorredlight</item>
+        <item>@color/colorredmedium</item>
+        <item>@color/blue</item>
+
+    </array>
+
+    <string-array  name="fontsArray">
+        <item>@string/m_light</item>
+        <item>@string/etalasi</item>
+        <item>@string/oiRegular</item>
+        <item>@string/oswald</item>
+        <item>@string/masked</item>
+        <item>@string/rodano</item>
+    </string-array>
+
+    <integer-array name="gradientArray">
+        <item>@drawable/gradient_1</item>
+        <item>@drawable/gradient_2</item>
+        <item>@drawable/gradient_3</item>
+        <item>@drawable/gradient_4</item>
+        <item>@drawable/gradient_5</item>
+        <item>@drawable/gradient_6</item>
+        <item>@drawable/gradient_7</item>
+        <item>@drawable/gradient_8</item>
+    </integer-array>
+
+    <integer-array name="frameArray">
+        <item>@drawable/frame1</item>
+        <item>@drawable/frame2</item>
+        <item>@drawable/frame3</item>
+        <item>@drawable/frame8</item>
+        <item>@drawable/frame9</item>
+        <item>@drawable/frame14</item>
+        <item>@drawable/frame16</item>
+        <item>@drawable/frame17</item>
+        <item>@drawable/frame18</item>
+        <item>@drawable/frame19</item>
+        <item>@drawable/frame20</item>
+        <item>@drawable/frame21</item>
+        <item>@drawable/frame22</item>
+        <item>@drawable/frame23</item>
+        <item>@drawable/spe1</item>
+        <item>@drawable/spe2</item>
+        <item>@drawable/spe3</item>
+        <item>@drawable/spe4</item>
+        <item>@drawable/spe5</item>
+        <item>@drawable/spe6</item>
+    </integer-array>
+
+
+    <integer-array name="gridArray">
+        <item>@drawable/one_grid</item>
+        <item>@drawable/two_grid_two</item>
+        <item>@drawable/three_grid_one</item>
+        <item>@drawable/four_grid_one</item>
+        <item>@drawable/five_grid</item>
+        <item>@drawable/six_grid_two</item>
+        <item>@drawable/seven_grid</item>
+        <item>@drawable/eight_grid</item>
+    </integer-array>
+
+        <!--stickers-->
+    <integer-array name="stickerArray">
+        <item>@drawable/haizewang_23</item>
+        <item>@drawable/haizewang_90</item>
+        <item>@drawable/haizewang_215</item>
+        <item>@drawable/sticker1</item>
+        <item>@drawable/sticker2</item>
+        <item>@drawable/sticker3</item>
+        <item>@drawable/sticker4</item>
+        <item>@drawable/sticker5</item>
+        <item>@drawable/sticker6</item>
+        <item>@drawable/sticker7</item>
+        <item>@drawable/sticker8</item>
+        <item>@drawable/sticker9</item>
+        <item>@drawable/sticker10</item>
+        <item>@drawable/sticker11</item>
+        <item>@drawable/sticker12</item>
+        <item>@drawable/sticker13</item>
+        <item>@drawable/sticker14</item>
+        <item>@drawable/sticker15</item>
+        <item>@drawable/sticker16</item>
+        <item>@drawable/sticker17</item>
+        <item>@drawable/sticker18</item>
+        <item>@drawable/sticker19</item>
+        <item>@drawable/sticker20</item>
+        <item>@drawable/sticker21</item>
+        <item>@drawable/sticker22</item>
+        <item>@drawable/sticker23</item>
+        <item>@drawable/sticker24</item>
+        <item>@drawable/sticker25</item>
+        <item>@drawable/sticker26</item>
+        <item>@drawable/sticker27</item>
+        <item>@drawable/sticker28</item>
+        <item>@drawable/sticker29</item>
+        <item>@drawable/sticker30</item>
+        <item>@drawable/sticker31</item>
+        <item>@drawable/sticker32</item>
+        <item>@drawable/sticker33</item>
+        <item>@drawable/sticker34</item>
+        <item>@drawable/sticker35</item>
+        <item>@drawable/sticker36</item>
+        <item>@drawable/sticker37</item>
+        <item>@drawable/sticker38</item>
+        <item>@drawable/sticker39</item>
+        <item>@drawable/sticker40</item>
+        <item>@drawable/sticker41</item>
+        <item>@drawable/sticker42</item>
+        <item>@drawable/sticker43</item>
+    </integer-array>
+
+    <!--filter-->
+    <integer-array name="filterArray">
+        <item>@drawable/none</item>
+        <item>@drawable/oil</item>
+        <item>@drawable/blur</item>
+        <item>@drawable/grey</item>
+    </integer-array>
+
+</resources>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorpurpleshade"
+    tools:context="com.tas.collagemaker.photoeditor.piccollage.photoframe.otherclasses.MainCanvas">
+
+    <!--top layout toolbar -->
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorbrownshade"
+        android:backgroundTint="@color/colorbrownshade"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="backToYourWork"
+            android:padding="11dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="downloadImage"
+            android:padding="10dp"
+            android:src="@drawable/download_btn" />
+    </RelativeLayout>
+    <!--canvas layout middle-->
+    <com.tas.collagemaker.photoeditor.piccollage.photoframe.stickerwork.StickerView
+        android:id="@+id/sticker_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/floatlayout"
+        android:layout_below="@+id/top"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        app:showBorder="true"
+        app:showIcons="true"
+        tools:ignore="MissingClass"
+
+
+        >
+        <!--1 with 1 img-->
+        <include
+            android:id="@+id/include1"
+            layout="@layout/single_layout1"
+            android:visibility="gone" />
+        <!--2 with 2 img-->
+        <include
+            android:id="@+id/include2"
+            layout="@layout/image_layout2"
+            android:visibility="gone" />
+        <!--3  with 3 img-->
+        <include
+            android:id="@+id/include3"
+            layout="@layout/layout_image3"
+            android:visibility="gone" />
+        <!--4 with 4 img-->
+        <include
+            android:id="@+id/include4"
+            layout="@layout/image_layout4"
+            android:visibility="gone" />
+        <!--5 with 5 img-->
+        <include
+            android:id="@+id/include5"
+            layout="@layout/image5_layout"
+            android:visibility="gone" />
+        <!--6 with 6 img-->
+        <include
+            android:id="@+id/include6"
+            layout="@layout/layout_image6"
+            android:visibility="gone" />
+        <!--7 with 7 img-->
+        <include
+            android:id="@+id/include7"
+            layout="@layout/layout_image7"
+            android:visibility="gone" />
+        <!--8 with 8 img-->
+        <include
+            android:id="@+id/include8"
+            layout="@layout/layout_image8"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/backgrounder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+
+
+    </com.tas.collagemaker.photoeditor.piccollage.photoframe.stickerwork.StickerView>
+    <!--  float    -->
+    <RelativeLayout
+        android:id="@+id/floatlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/goneviews">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/float2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="@color/White"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_add_photo_alternate_24"
+            android:visibility="invisible"
+            app:layout_anchorGravity="bottom|right|end" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/goneviews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <include
+            android:id="@+id/forcolor"
+            layout="@layout/layout_forbackground"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/forcollage"
+            layout="@layout/layout_forcollage"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/forsticker"
+            layout="@layout/layout_forsticker"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/fortextsticker"
+            layout="@layout/layout_fortext"
+            android:visibility="gone" />
+
+
+        <include
+            android:id="@+id/forfilterapply"
+            layout="@layout/layout_forfilter"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    <!--bottom -->
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorbrownshade"
+        android:backgroundTint="@color/colorbrownshade"
+        android:visibility="visible">
+
+        <HorizontalScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/group_grid"
+                    android:onClick="backgroundfun"
+                    android:padding="10dp"
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/group_background"
+                    android:onClick="colorfun"
+                    android:padding="10dp"
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/group_text"
+                    android:onClick="textForStickerText"
+                    android:padding="10dp"
+                    android:scaleType="centerCrop"
+
+                    />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/group_fonts"
+                    android:onClick="textforfun"
+                    android:padding="10dp"
+                    android:scaleType="centerCrop"
+
+                    />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:src="@drawable/group_sticker"
+                    android:onClick="stickerfun"
+                    android:padding="10dp"
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/group_filter"
+                    android:onClick="filterforfun"
+                    android:padding="10dp"
+                    android:scaleType="centerCrop"
+                    />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

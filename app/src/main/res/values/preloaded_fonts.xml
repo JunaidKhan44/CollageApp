@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/aguafina_script</item>
+        <item>@font/alfa_slab_one</item>
+        <item>@font/audiowide</item>
+        <item>@font/crafty_girls</item>
+        <item>@font/faster_one</item>
+        <item>@font/monoton</item>
+        <item>@font/montserrat</item>
+        <item>@font/pacifico</item>
+    </array>
+</resources>
